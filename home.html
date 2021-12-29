@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>international campus</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="dynamic.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1><a href="home.html">Yonsei-International Campus</a></h1>
+
+  <input type="button" value="night" onclick="
+  nightDayChanger(this)
+  ">
+  <div id="bigbox">
+    <div id="left">
+      <ol>
+        <li><a href="MyFirstWebPage_dorm1.html">dorm one</a></li>
+        <li><a href="MyFirstWebPage_dorm2.html">dorm tue</a></li>
+        <li><a href="MyFirstWebPage_UML.html">UML</a></li>
+      </ol>
+    </div>
+    <div id="right">
+      <h3 style="margin-top:0">Yonsei-International Campus</h3>
+      <p><strong>Yonsei-International Campus</strong> located in songdo is for freshman in Yonsei.
+        There are two dormitory for  student and UML which is built to remember underwood.
+        come to YIC!</p>
+        <img src="국제캠퍼스.jfif" alt="국제캠퍼스">
+    </div>
+  </div>
+  <input type="button" value="night" onclick="
+    if(this.value === 'night'){
+     document.querySelector('body').style.backgroundColor = 'black';
+     document.querySelector('body').style.color = 'white';
+     this.value = 'day';
+   } else {
+     document.querySelector('body').style.backgroundColor = 'white';
+     document.querySelector('body').style.color = 'black';
+     this.value = 'night';
+   }
+  ">
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+a:link,a:visited{
+  color:black;
+  text-decoration:none;
+}
+a:hover,a:active{
+  color:grey;
+  text-decoration:none;
+}
+
+#bigbox{
+  display:grid;
+  grid-template-columns:max-content auto;
+  border-top:2px solid black;
+}
+#left{
+  border-right:2px solid black;
+  padding-right:16px;
+
+}
+#right{
+  margin:16px;
+}
+@media(max-width:800px){
+  #bigbox{
+    display:block;
+    border:0;
+  }
+  #left{
+    border:0;
+  }
+}
